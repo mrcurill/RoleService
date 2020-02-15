@@ -1,7 +1,5 @@
 package ru.sbrf.role_service.web;
 
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,8 +16,8 @@ import ru.sbrf.role_service.dao.entity.EComponent;
 import ru.sbrf.role_service.dao.entity.UIConfig;
 import ru.sbrf.role_service.dao.repository.EComponentRepository;
 import ru.sbrf.role_service.dao.repository.UIConfigRepository;
-import ru.sbrf.role_service.web.mapper.ComponentMapper;
-import ru.sbrf.role_service.web.mapper.ViewMapper;
+import ru.sbrf.role_service.web.mapper.EComponentMapper;
+import ru.sbrf.role_service.web.mapper.UIConfigMapper;
 import ru.sbrf.role_service.web.request.LoginRequest;
 import ru.sbrf.role_service.web.response.EComponentResponse;
 import ru.sbrf.role_service.web.response.LoginResponse;
@@ -38,20 +36,20 @@ public class LoginController {
     private AuthenticationService authenticationService;
     private UIConfigRepository uiConfigRepository;
     private EComponentRepository eComponentRepository;
-    private ViewMapper viewMapper;
-    private ComponentMapper componentMapper;
+    private UIConfigMapper uiConfigMapper;
+    private EComponentMapper eComponentMapper;
 
     public LoginController() {}
 
     @Autowired
     public LoginController(AuthenticationService authenticationService, UIConfigRepository uiConfigRepository,
-                           EComponentRepository eComponentRepository, ViewMapper viewMapper,
-                           ComponentMapper componentMapper) {
+                           EComponentRepository eComponentRepository, UIConfigMapper uiConfigMapper,
+                           EComponentMapper eComponentMapper) {
         this.authenticationService = authenticationService;
         this.uiConfigRepository = uiConfigRepository;
         this.eComponentRepository = eComponentRepository;
-        this.viewMapper = viewMapper;
-        this.componentMapper = componentMapper;
+        this.uiConfigMapper = uiConfigMapper;
+        this.eComponentMapper = eComponentMapper;
 
     }
 
@@ -93,7 +91,7 @@ public class LoginController {
         Set<UIConfigResponse> uiConfigResponseSet = new HashSet<>();
 
         for( UIConfig UIConfig : views)
-            uiConfigResponseSet.add(viewMapper.viewToViewDto(UIConfig));
+            uiConfigResponseSet.add(uiConfigMapper.uiConfigToUIConfigResponse(UIConfig));
 
         return new ResponseEntity(uiConfigResponseSet, HttpStatus.OK);
     }
@@ -105,8 +103,8 @@ public class LoginController {
         Iterable<EComponent> components = eComponentRepository.findAll();
         Set<EComponentResponse> EComponentResponseSet = new HashSet<>();
 
-        for( EComponent EComponent : components)
-            EComponentResponseSet.add(componentMapper.componentToComponentDto(EComponent));
+        for( EComponent eComponent : components)
+            EComponentResponseSet.add(eComponentMapper.eComponentToEComponentResponse(eComponent));
 
         return new ResponseEntity(EComponentResponseSet, HttpStatus.OK);
     }
@@ -127,12 +125,12 @@ public class LoginController {
     @GetMapping("/components")
     @ResponseBody
     public ResponseEntity getComponentsController(String areaKey) {
-        return new ResponseEntity(viewMapper.viewToViewDto(uiConfigRepository.findByUid(areaKey).get(0)), HttpStatus.OK);
+        return new ResponseEntity(uiConfigMapper.uiConfigToUIConfigResponse(uiConfigRepository.findByUid(areaKey).get(0)), HttpStatus.OK);
     }
 
     @GetMapping("/views")
     @ResponseBody
     public ResponseEntity getViewsController(String areaKey) {
-        return new ResponseEntity(componentMapper.componentToComponentDto(eComponentRepository.findByName(areaKey).get(0)),HttpStatus.OK);
+        return new ResponseEntity(eComponentMapper.eComponentToEComponentResponse(eComponentRepository.findByName(areaKey).get(0)),HttpStatus.OK);
     }
 }

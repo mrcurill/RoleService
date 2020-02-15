@@ -10,18 +10,18 @@ import ru.sbrf.role_service.web.response.EComponentResponse;
 import java.util.Set;
 
 @Mapper (componentModel = "spring")
-public abstract class ComponentMapper {
+public abstract class EComponentMapper {
     @Mappings({
             @Mapping(source = "name", target = "name"),
             @Mapping(source = "onUIConfigs", target = "on"),
             @Mapping(source = "offUIConfigs", target = "off"),
             @Mapping(source = "disabledUIConfigs", target = "disabled")
     })
-    public abstract EComponentResponse componentToComponentDto(EComponent eComponent);
+    public abstract EComponentResponse eComponentToEComponentResponse(EComponent eComponent);
 
-    protected abstract Set<String> mapSetComponentToSetString(Set<UIConfig> uiConfigs);
+    protected abstract Set<String> mapSetEComponentToSetString(Set<UIConfig> uiConfigs);
 
-    protected String mapViewToString(UIConfig uiConfig) {
+    protected String mapUIConfigToString(UIConfig uiConfig) {
         return uiConfig.getUid();
     }
 }

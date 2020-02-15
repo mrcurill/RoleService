@@ -2,28 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="624b14e6-63c9-4142-ba97-ed5931956619" name="Default Changelist" comment="2">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EGroupRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/ERoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-data_import.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roleService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/roleService.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/UIConfigRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/UIConfigRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ComponentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ComponentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ViewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ViewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/db.changelog-master.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ComponentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ViewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/roleService.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/liquibase/db.changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/liquibase/db.changelog-master.xml" afterDir="false" />
@@ -83,33 +65,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="468">
+              <caret line="121" column="49" lean-forward="true" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#941#942#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/enums/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -153,8 +135,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EGroupRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/ERoleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" />
       </list>
     </option>
   </component>
@@ -415,6 +399,45 @@
               <item name="RoleService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="role_service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="role_service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="role_service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="role_service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -455,7 +478,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581784419080" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581785289562" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -578,7 +601,7 @@
       <workItem from="1581519763621" duration="86000" />
       <workItem from="1581519875075" duration="12000" />
       <workItem from="1581519906339" duration="9777000" />
-      <workItem from="1581769627549" duration="13205000" />
+      <workItem from="1581769627549" duration="13771000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1581006423761</created>
@@ -622,14 +645,22 @@
       <option name="project" value="LOCAL" />
       <updated>1581353302186</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2">
+      <created>1581784648841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581784648841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13205000" />
+    <option name="totallyTimeSpent" value="13771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Designer" />
@@ -650,7 +681,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -849,24 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ComponentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ViewMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/db.changelog-master.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1019,17 +1032,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/enums/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#381#382#0" expanded="true" />
             <element signature="e#434#435#0" expanded="true" />
@@ -1037,10 +1050,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/enums/Role.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="165">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="121" column="49" lean-forward="true" selection-start-line="121" selection-start-column="49" selection-end-line="121" selection-end-column="49" />
         </state>
       </provider>
     </entry>
