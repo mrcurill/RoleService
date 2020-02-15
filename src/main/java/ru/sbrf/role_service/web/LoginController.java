@@ -90,8 +90,8 @@ public class LoginController {
         Iterable<UIConfig> views = uiConfigRepository.findAll();
         Set<UIConfigResponse> uiConfigResponseSet = new HashSet<>();
 
-        for( UIConfig UIConfig : views)
-            uiConfigResponseSet.add(uiConfigMapper.uiConfigToUIConfigResponse(UIConfig));
+        for( UIConfig uiConfig : views)
+            uiConfigResponseSet.add(uiConfigMapper.uiConfigToUIConfigResponse(uiConfig));
 
         return new ResponseEntity(uiConfigResponseSet, HttpStatus.OK);
     }
@@ -109,28 +109,38 @@ public class LoginController {
         return new ResponseEntity(EComponentResponseSet, HttpStatus.OK);
     }
 
-    @PostMapping("/components/add")
-    @ResponseBody
-    public ResponseEntity postComponentAddController() {
-
-        UIConfig uiConfig = uiConfigRepository.findByUid("uiConfig1").get(0);
-        EComponent eComponent = eComponentRepository.findByName("eComponent2").get(0);
-
-        uiConfig.addOffComponent(eComponent);
-        uiConfigRepository.save(uiConfig);
-
-        return new ResponseEntity(HttpStatus.OK);
-    }
+//    @PostMapping("/components/add")
+//    @ResponseBody
+//    public ResponseEntity postComponentAddController() {
+//
+//        UIConfig uiConfig = uiConfigRepository.findByUid("uiConfig1").get(0);
+//        EComponent eComponent = eComponentRepository.findByName("eComponent2").get(0);
+//
+//        uiConfig.addOffComponent(eComponent);
+//        uiConfigRepository.save(uiConfig);
+//
+//        return new ResponseEntity(HttpStatus.OK);
+//    }
 
     @GetMapping("/components")
     @ResponseBody
     public ResponseEntity getComponentsController(String areaKey) {
-        return new ResponseEntity(uiConfigMapper.uiConfigToUIConfigResponse(uiConfigRepository.findByUid(areaKey).get(0)), HttpStatus.OK);
+        List<UIConfig> uiConfigs = uiConfigRepository.findByUid(areaKey);
+
+        if( !uiConfigs.isEmpty() )
+            return new ResponseEntity(uiConfigMapper.uiConfigToUIConfigResponse(uiConfigs.get(0)), HttpStatus.OK);
+        else
+            return new ResponseEntity(HttpStatus.OK);
     }
 
     @GetMapping("/views")
     @ResponseBody
     public ResponseEntity getViewsController(String areaKey) {
-        return new ResponseEntity(eComponentMapper.eComponentToEComponentResponse(eComponentRepository.findByName(areaKey).get(0)),HttpStatus.OK);
+        List<EComponent> eComponents = eComponentRepository.findByName(areaKey);
+
+        if( !eComponents.isEmpty() )
+            return new ResponseEntity(eComponentMapper.eComponentToEComponentResponse(eComponents.get(0)),HttpStatus.OK);
+        else
+            return new ResponseEntity(HttpStatus.OK);
     }
 }
