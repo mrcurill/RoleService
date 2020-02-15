@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="create_tables_1.0" author="kagapov">
+
+        <!--E_USER-->
+        <createSequence sequenceName="E_USER_ID_SEQ"/>
+        <createTable tableName="E_USER" remarks="Таблица пользователей">
+
+            <column name="ID" type="BIGINT" defaultValueSequenceNext="E_USER_ID_SEQ" remarks="id пользователя">
+                <constraints primaryKey="true" primaryKeyName="PK_E_USER"/>
+            </column>
+            <column name="LOGIN" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PASSWORD" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ROLE_ID" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="IP" type="VARCHAR">
+                <constraints nullable="true"/>
+            </column>
+            <column name="LAST_SIGN" type="DATE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="CREATED_AT" type="DATE">
+                <constraints nullable="true"/>
+            </column>
+            <column name="IS_ACTIVE" type="CHAR(1)" defaultValue="N">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+
+
+        <!--E_COMPONENT-->
+        <createSequence sequenceName="E_COMPONENT_ID_SEQ"/>
+        <createTable tableName="E_COMPONENT" remarks="Таблица компонентов">
+            <column name="ID" type="BIGINT" defaultValueSequenceNext="E_COMPONENT_ID_SEQ" remarks="id компонента">
+                <constraints primaryKey="true" primaryKeyName="PK_E_COMPONENT"/>
+            </column>
+            <column name="NAME" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+
+        <!--E_ROLE-->
+        <createSequence sequenceName="E_ROLE_ID_SEQ"/>
+        <createTable tableName="E_ROLE" remarks="Таблица ролей">
+            <column name="ID" type="BIGINT" defaultValueSequenceNext="E_ROLE_ID_SEQ" remarks="id роли">
+                <constraints nullable="false" primaryKey="true" primaryKeyName=" PK_E_ROLE"/>
+            </column>
+            <column name="NAME" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+
+        <!--E_GROUP-->
+        <createSequence sequenceName="E_GROUP_ID_SEQ"/>
+        <createTable tableName="E_GROUP" remarks="Таблица групп">
+            <column name="ID" type="BIGINT" defaultValueSequenceNext="E_GROUP_ID_SEQ" remarks="id группы">
+                <constraints nullable="false" primaryKey="true" primaryKeyName=" PK_E_GROUP"/>
+            </column>
+            <column name="NAME" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+
+        <!--E_USER_E_GROUP-->
+        <createTable tableName="E_USER_E_GROUP" remarks="Таблица пересечения груп и пользователей">
+            <column name="E_USER_ID" type="BIGINT" remarks="id пользователя">
+                <constraints nullable="false" foreignKeyName="FK_E_USER_E_GROUP_USER_ID" references="E_USER (ID)"/>
+            </column>
+            <column name="E_GROUP_ID" type="BIGINT" remarks="id группы">
+                <constraints nullable="false" foreignKeyName="FK_E_USER_E_GROUP_GROUP_ID" references="E_GROUP (ID)"/>
+            </column>
+        </createTable>
+
+
+        <!--UI_CONFIG-->
+        <createSequence sequenceName="UI_CONFIG_ID_SEQ"/>
+        <createTable tableName="UI_CONFIG" remarks="Таблица соответсвия">
+            <column name="ID" type="BIGINT" defaultValueSequenceNext="UI_CONFIG_ID_SEQ" remarks="id соответсвия">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_UI_CONFIG"/>
+            </column>
+            <column name="UID" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+
+        <!--UI_CONFIG_ON_COMP-->
+        <createTable tableName="UI_CONFIG_ON_COMP" remarks="Таблица пересечения соответствий и включенных компонент">
+            <column name="UI_CONFIG_ID" type="BIGINT" remarks="id соответствия">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_ON" references="UI_CONFIG (ID)"/>
+            </column>
+            <column name="E_COMPONENT_ID" type="BIGINT" remarks="id компонента">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_ON_E_COMP" references="E_COMPONENT (ID)"/>
+            </column>
+        </createTable>
+
+
+        <!--UI_CONFIG_OFF_COMP-->
+        <createTable tableName="UI_CONFIG_OFF_COMP" remarks="Таблица пересечения соответствий и выключеных компонент">
+            <column name="UI_CONFIG_ID" type="BIGINT" remarks="id соответствия">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_OFF" references="UI_CONFIG (ID)"/>
+            </column>
+            <column name="E_COMPONENT_ID" type="BIGINT" remarks="id компонента">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_OFF_E_COMP" references="E_COMPONENT (ID)"/>
+            </column>
+        </createTable>
+
+
+        <!--UI_CONFIG_DIS_COMP-->
+        <createTable tableName="UI_CONFIG_DIS_COMP" remarks="Таблица пересечения соответствий и отключенных компонент">
+            <column name="UI_CONFIG_ID" type="BIGINT" remarks="id соответствия">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_DIS" references="UI_CONFIG (ID)"/>
+            </column>
+            <column name="E_COMPONENT_ID" type="BIGINT" remarks="id компонента">
+                <constraints nullable="false" foreignKeyName="FK_UI_CONFIG_DIS_E_COMP" references="E_COMPONENT (ID)"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>
+
+

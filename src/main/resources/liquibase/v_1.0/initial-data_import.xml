@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+	    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<!--SELECT * FROM E_USER;-->
+<!--SELECT * FROM E_COMPONENT;-->
+<!--SELECT * FROM E_GROUP;-->
+<!--SELECT * FROM E_USER_E_GROUP;-->
+<!--SELECT * FROM UI_CONFIG;-->
+<!--SELECT * FROM UI_CONFIG_DIS_COMP; -->
+<!--SELECT * FROM UI_CONFIG_OFF_COMP;-->
+<!--SELECT * FROM UI_CONFIG_ON_COMP;    -->
+
+    <changeSet id="insert_data_1.0" author="kagapov">
+
+        <!--E_USER-->
+        <insert tableName="E_USER">
+            <column name="LOGIN" value="admin"/>
+            <column name="PASSWORD" value="admin"/>
+            <column name="ROLE_ID" value="1"/>
+            <column name="IP"/>
+            <column name="LAST_SIGN" valueDate="SYSDATE"/>
+            <column name="CREATED_AT" valueDate="SYSDATE"/>
+            <column name="IS_ACTIVE" value="Y"/>
+        </insert>
+        <insert tableName="E_USER">
+            <column name="LOGIN" value="guest"/>
+            <column name="PASSWORD" value="guest"/>
+            <column name="ROLE_ID" value="2"/>
+            <column name="IP"/>
+            <column name="LAST_SIGN" valueDate="SYSDATE"/>
+            <column name="CREATED_AT" valueDate="SYSDATE"/>
+            <column name="IS_ACTIVE" value="Y"/>
+        </insert>
+
+
+        <!--E_COMPONENT-->
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="eComponent1"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="eComponent2"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="eComponent3"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="eComponent4"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="eComponent5"/>
+        </insert>
+
+
+        <!--E_ROLE-->
+        <insert tableName="E_ROLE">
+            <column name="NAME" value="eRole1"/>
+        </insert>
+        <insert tableName="E_ROLE">
+            <column name="NAME" value="eRole2"/>
+        </insert>
+
+
+        <!--E_GROUP-->
+        <insert tableName="E_GROUP">
+            <column name="NAME" value="eGroup1"/>
+        </insert>
+        <insert tableName="E_GROUP">
+            <column name="NAME" value="eGroup2"/>
+        </insert>
+
+
+        <!--E_USER_E_GROUP-->
+        <insert tableName="E_USER_E_GROUP">
+            <column name="E_USER_ID" value="1"/>
+            <column name="E_GROUP_ID" value="1"/>
+        </insert>
+        <insert tableName="E_USER_E_GROUP">
+            <column name="E_USER_ID" value="2"/>
+            <column name="E_GROUP_ID" value="2"/>
+        </insert>
+
+
+        <!--UI_CONFIG-->
+        <insert tableName="UI_CONFIG">
+            <column name="UID" value="uiConfig1"/>
+        </insert>
+        <insert tableName="UI_CONFIG">
+            <column name="UID" value="uiConfig2"/>
+        </insert>
+
+
+        <!--UI_CONFIG_ON_COMP-->
+        <insert tableName="UI_CONFIG_ON_COMP">
+            <column name="UI_CONFIG_ID" value="1"/>
+            <column name="E_COMPONENT_ID" value="1"/>
+        </insert>
+        <insert tableName="UI_CONFIG_ON_COMP">
+            <column name="UI_CONFIG_ID" value="1"/>
+            <column name="E_COMPONENT_ID" value="2"/>
+        </insert>
+        <insert tableName="UI_CONFIG_ON_COMP">
+            <column name="UI_CONFIG_ID" value="2"/>
+            <column name="E_COMPONENT_ID" value="1"/>
+        </insert>
+
+
+        <!--UI_CONFIG_OFF_COMP-->
+        <insert tableName="UI_CONFIG_OFF_COMP">
+            <column name="UI_CONFIG_ID" value="1"/>
+            <column name="E_COMPONENT_ID" value="3"/>
+        </insert>
+        <insert tableName="UI_CONFIG_OFF_COMP">
+            <column name="UI_CONFIG_ID" value="1"/>
+            <column name="E_COMPONENT_ID" value="4"/>
+        </insert>
+        <insert tableName="UI_CONFIG_OFF_COMP">
+            <column name="UI_CONFIG_ID" value="2"/>
+            <column name="E_COMPONENT_ID" value="3"/>
+        </insert>
+
+
+        <!--UI_CONFIG_DIS_COMP-->
+        <insert tableName="UI_CONFIG_DIS_COMP">
+            <column name="UI_CONFIG_ID" value="1"/>
+            <column name="E_COMPONENT_ID" value="5"/>
+        </insert>
+        <insert tableName="UI_CONFIG_DIS_COMP">
+            <column name="UI_CONFIG_ID" value="2"/>
+            <column name="E_COMPONENT_ID" value="4"/>
+        </insert>
+        <insert tableName="UI_CONFIG_DIS_COMP">
+            <column name="UI_CONFIG_ID" value="2"/>
+            <column name="E_COMPONENT_ID" value="5"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
+
+

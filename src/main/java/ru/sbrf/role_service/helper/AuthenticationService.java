@@ -8,12 +8,15 @@ import ru.sbrf.role_service.dao.repository.EUserRepository;
 @Component
 public class AuthenticationService {
 
-    @Autowired
-    private EUserRepository EUserRepository;
+    private EUserRepository eUserRepository;
+
+    public AuthenticationService(EUserRepository eUserRepository) {
+        this.eUserRepository = eUserRepository;
+    }
 
     public Boolean checkLogin(String login, String password) {
 
-        if( !EUserRepository.findByLoginAndPassword(login, password).isEmpty())
+        if( !eUserRepository.findByLoginAndPassword(login, password).isEmpty())
             return  true;
         else
             return false;

@@ -10,38 +10,46 @@ import java.util.Set;
 @Data
 public class UIConfig {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ui_config_id_seq")
-    @SequenceGenerator(name = "ui_config_id_seq", sequenceName = "ui_config_id_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "UI_CONFIG_ID_SEQ")
+    @SequenceGenerator(name = "UI_CONFIG_ID_SEQ", sequenceName = "UI_CONFIG_ID_SEQ", allocationSize = 1)
     private Long id;
-    private String name;
+    private String uid;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
     @JoinTable(name = "UI_CONFIG_ON_COMP",
-            joinColumns = @JoinColumn(name="ui_config_id"),
-            inverseJoinColumns = @JoinColumn(name="e_component_id"))
+            joinColumns = @JoinColumn(name="UI_CONFIG_ID"),
+            inverseJoinColumns = @JoinColumn(name="E_COMPONENT_ID"))
     private Set<EComponent> onEComponents;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
     @JoinTable(name = "UI_CONFIG_OFF_COMP",
-            joinColumns = @JoinColumn(name="ui_config_id"),
-            inverseJoinColumns = @JoinColumn(name="e_component_id"))
+            joinColumns = @JoinColumn(name="UI_CONFIG_ID"),
+            inverseJoinColumns = @JoinColumn(name="E_COMPONENT_ID"))
     private Set<EComponent> offEComponents;
 
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-    @JoinTable(name = "UI_CONFIG_DISABLED_COMP",
-            joinColumns = @JoinColumn(name="ui_config_id"),
-            inverseJoinColumns = @JoinColumn(name="e_component_id"))
+    @JoinTable(name = "UI_CONFIG_DIS_COMP",
+            joinColumns = @JoinColumn(name="UI_CONFIG_ID"),
+            inverseJoinColumns = @JoinColumn(name="E_COMPONENT_ID"))
     private Set<EComponent> disabledEComponents;
 
-//    public void addOnComponent(Component component) {
-//        onComponents.add(component);
-//        component.getOnViews().add(this);
-//    }
-//
-//    public void removeOnComponent(Component component) {
-//        onComponents.remove(component);
-//        component.getOnViews().remove(this);
-//    }
+    public void addOnEComponent(EComponent eComponent) {
+        onEComponents.add(eComponent);
+        offEComponents.remove(eComponent);
+        disabledEComponents.remove(eComponent);
+    }
+
+    public void addOffComponent(EComponent eComponent) {
+        offEComponents.add(eComponent);
+        onEComponents.remove(eComponent);
+        disabledEComponents.remove(eComponent);
+    }
+
+    public void addDisabledEComponent(EComponent eComponent) {
+        disabledEComponents.add(eComponent);
+        onEComponents.remove(eComponent);
+        offEComponents.remove(eComponent);
+    }
 
     @Override
     public boolean equals(Object o) {

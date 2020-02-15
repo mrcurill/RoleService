@@ -22,6 +22,6 @@ public abstract class ComponentMapper {
     protected abstract Set<String> mapSetComponentToSetString(Set<UIConfig> uiConfigs);
 
     protected String mapViewToString(UIConfig uiConfig) {
-        return uiConfig.getName();
+        return uiConfig.getUid();
     }
 }

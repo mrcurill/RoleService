@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Data
@@ -12,9 +13,11 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class EGroup {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "e_group_id_seq")
-    @SequenceGenerator(name = "e_group_id_seq", sequenceName = "e_group_id_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "E_GROUP_ID_SEQ")
+    @SequenceGenerator(name = "E_GROUP_ID_SEQ", sequenceName = "E_GROUP_ID_SEQ", allocationSize = 1)
     private Long id;
     @NonNull
     private String name;
+    @ManyToMany(mappedBy = "eGroups")
+    private Set<EUser> eUsers;
 }

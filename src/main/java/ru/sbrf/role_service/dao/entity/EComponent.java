@@ -10,24 +10,24 @@ import java.util.Set;
 @Data
 public class EComponent {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "e_component_id_seq")
-    @SequenceGenerator(name = "e_component_id_seq", sequenceName = "e_component_id_seq", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "E_COMPONENT_ID_SEQ")
+    @SequenceGenerator(name = "E_COMPONENT_ID_SEQ", sequenceName = "E_COMPONENT_ID_SEQ", allocationSize = 1)
     private Long id;
     private String name;
 
-    @ManyToMany(mappedBy = "onComponents")
+    @ManyToMany(mappedBy = "onEComponents")
     private Set<UIConfig> onUIConfigs;
 
-    @ManyToMany(mappedBy = "offComponents")
+    @ManyToMany(mappedBy = "offEComponents")
     private Set<UIConfig> offUIConfigs;
 
-    @ManyToMany(mappedBy = "disabledComponents")
+    @ManyToMany(mappedBy = "disabledEComponents")
     private Set<UIConfig> disabledUIConfigs;
 
-    @Override
-    public String toString() {
-        return name;
-    }
+//    @Override
+//    public String toString() {
+//        return name;
+//    }
 
 //    @Override
 //    public boolean equals(Object o) {

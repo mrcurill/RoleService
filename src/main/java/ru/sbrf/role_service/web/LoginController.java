@@ -1,5 +1,7 @@
 package ru.sbrf.role_service.web;
 
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,18 +35,25 @@ import java.util.Set;
 @Log
 public class LoginController {
 
-    @Autowired
-    AuthenticationService authenticationService;
-    @Autowired
-    UIConfigRepository UIConfigRepository;
-    @Autowired
-    EComponentRepository EComponentRepository;
-    @Autowired
-    ViewMapper viewMapper;
-    @Autowired
-    ComponentMapper componentMapper;
+    private AuthenticationService authenticationService;
+    private UIConfigRepository uiConfigRepository;
+    private EComponentRepository eComponentRepository;
+    private ViewMapper viewMapper;
+    private ComponentMapper componentMapper;
 
     public LoginController() {}
+
+    @Autowired
+    public LoginController(AuthenticationService authenticationService, UIConfigRepository uiConfigRepository,
+                           EComponentRepository eComponentRepository, ViewMapper viewMapper,
+                           ComponentMapper componentMapper) {
+        this.authenticationService = authenticationService;
+        this.uiConfigRepository = uiConfigRepository;
+        this.eComponentRepository = eComponentRepository;
+        this.viewMapper = viewMapper;
+        this.componentMapper = componentMapper;
+
+    }
 
     @PostMapping ("/users/login")
     @ResponseBody
@@ -80,7 +89,7 @@ public class LoginController {
     @ResponseBody
     public ResponseEntity postViewsController() {
 
-        Iterable<UIConfig> views = UIConfigRepository.findAll();
+        Iterable<UIConfig> views = uiConfigRepository.findAll();
         Set<UIConfigResponse> uiConfigResponseSet = new HashSet<>();
 
         for( UIConfig UIConfig : views)
@@ -93,7 +102,7 @@ public class LoginController {
     @ResponseBody
     public ResponseEntity postComponentsController() {
 
-        Iterable<EComponent> components = EComponentRepository.findAll();
+        Iterable<EComponent> components = eComponentRepository.findAll();
         Set<EComponentResponse> EComponentResponseSet = new HashSet<>();
 
         for( EComponent EComponent : components)
@@ -106,11 +115,11 @@ public class LoginController {
     @ResponseBody
     public ResponseEntity postComponentAddController() {
 
-        UIConfig UIConfig = UIConfigRepository.findByName("view2").get(0);
-        EComponent EComponent = EComponentRepository.findByName("component2").get(0);
+        UIConfig uiConfig = uiConfigRepository.findByUid("uiConfig1").get(0);
+        EComponent eComponent = eComponentRepository.findByName("eComponent2").get(0);
 
-        UIConfig.getOnEComponents().add(EComponent);
-        UIConfigRepository.save(UIConfig);
+        uiConfig.addOffComponent(eComponent);
+        uiConfigRepository.save(uiConfig);
 
         return new ResponseEntity(HttpStatus.OK);
     }
@@ -118,12 +127,12 @@ public class LoginController {
     @GetMapping("/components")
     @ResponseBody
     public ResponseEntity getComponentsController(String areaKey) {
-        return new ResponseEntity(viewMapper.viewToViewDto(UIConfigRepository.findByName(areaKey).get(0)), HttpStatus.OK);
+        return new ResponseEntity(viewMapper.viewToViewDto(uiConfigRepository.findByUid(areaKey).get(0)), HttpStatus.OK);
     }
 
     @GetMapping("/views")
     @ResponseBody
     public ResponseEntity getViewsController(String areaKey) {
-        return new ResponseEntity(componentMapper.componentToComponentDto(EComponentRepository.findByName(areaKey).get(0)),HttpStatus.OK);
+        return new ResponseEntity(componentMapper.componentToComponentDto(eComponentRepository.findByName(areaKey).get(0)),HttpStatus.OK);
     }
 }

@@ -12,7 +12,7 @@ import java.util.Set;
 @Mapper (componentModel = "spring")
 public abstract class ViewMapper {
     @Mappings({
-            @Mapping(source = "name", target = "name"),
+            @Mapping(source = "uid", target = "name"),
             @Mapping(source = "onEComponents", target = "on"),
             @Mapping(source = "offEComponents", target = "off"),
             @Mapping(source = "disabledEComponents", target = "disabled")
