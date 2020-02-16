@@ -1,8 +1,6 @@
 package ru.sbrf.role_service.dao.entity;
 
 import lombok.*;
-import ru.sbrf.role_service.enums.Role;
-
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -25,16 +23,17 @@ public class EUser {
     private Date lastSign;
     private Date createdAt;
     private Boolean isActive;
-    private Long roleId;
-//    @NonNull
-//    @Enumerated(EnumType.STRING)
-//    private Role role;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-    @JoinTable(name = "E_USER_E_GROUP",
-            joinColumns = @JoinColumn(name="E_USER_ID"),
-            inverseJoinColumns = @JoinColumn(name="E_GROUP_ID"))
-    private Set<EGroup> eGroups;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    private ERole eRole;
+//
+//    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+//    @JoinTable(name = "E_USER_E_GROUP",
+//            joinColumns = @JoinColumn(name="E_USER_ID"),
+//            inverseJoinColumns = @JoinColumn(name="E_GROUP_ID"))
+//    private Set<EGroup> eGroups;
+
+
 
     @Override
     public boolean equals(Object o) {

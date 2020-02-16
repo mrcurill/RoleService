@@ -3,6 +3,7 @@ package ru.sbrf.role_service.dao.entity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -24,21 +25,18 @@ public class EComponent {
     @ManyToMany(mappedBy = "disabledEComponents")
     private Set<UIConfig> disabledUIConfigs;
 
-//    @Override
-//    public String toString() {
-//        return name;
-//    }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Component tag = (Component) o;
-//        return Objects.equals(name, tag.name);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(name);
-//    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EComponent tag = (EComponent) o;
+        return Objects.equals(name, tag.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
 }

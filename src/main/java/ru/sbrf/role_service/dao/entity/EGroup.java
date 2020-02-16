@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -18,6 +19,20 @@ public class EGroup {
     private Long id;
     @NonNull
     private String name;
-    @ManyToMany(mappedBy = "eGroups")
-    private Set<EUser> eUsers;
+//    @ManyToMany(mappedBy = "eGroups")
+//    private Set<EUser> eUsers;
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EGroup tag = (EGroup) o;
+        return Objects.equals(name, tag.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
 }

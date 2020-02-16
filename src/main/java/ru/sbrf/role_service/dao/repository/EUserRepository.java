@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface EUserRepository extends CrudRepository<EUser, Long> {
     List<EUser> findByLoginAndPassword(String login, String password);
+    List<EUser> findByLogin(String login);
 }

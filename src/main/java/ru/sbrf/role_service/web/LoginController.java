@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
+import ru.sbrf.role_service.dao.entity.EUser;
+import ru.sbrf.role_service.dao.repository.EUserRepository;
 import ru.sbrf.role_service.helper.AuthenticationService;
 import ru.sbrf.role_service.dao.entity.EComponent;
 import ru.sbrf.role_service.dao.entity.UIConfig;
 import ru.sbrf.role_service.dao.repository.EComponentRepository;
 import ru.sbrf.role_service.dao.repository.UIConfigRepository;
 import ru.sbrf.role_service.web.mapper.EComponentMapper;
+import ru.sbrf.role_service.web.mapper.EUserMapper;
 import ru.sbrf.role_service.web.mapper.UIConfigMapper;
 import ru.sbrf.role_service.web.request.LoginRequest;
 import ru.sbrf.role_service.web.response.EComponentResponse;
@@ -34,20 +37,29 @@ import java.util.Set;
 public class LoginController {
 
     private AuthenticationService authenticationService;
+    private EUserRepository eUserRepository;
     private UIConfigRepository uiConfigRepository;
     private EComponentRepository eComponentRepository;
+    private EUserMapper eUserMapper;
     private UIConfigMapper uiConfigMapper;
     private EComponentMapper eComponentMapper;
 
     public LoginController() {}
 
     @Autowired
-    public LoginController(AuthenticationService authenticationService, UIConfigRepository uiConfigRepository,
-                           EComponentRepository eComponentRepository, UIConfigMapper uiConfigMapper,
+    public LoginController(AuthenticationService authenticationService,
+                           EUserRepository eUserRepository,
+                           UIConfigRepository uiConfigRepository,
+                           EComponentRepository eComponentRepository,
+                           EUserMapper eUserMapper,
+                           UIConfigMapper uiConfigMapper,
                            EComponentMapper eComponentMapper) {
         this.authenticationService = authenticationService;
+        this.eUserRepository = eUserRepository;
         this.uiConfigRepository = uiConfigRepository;
         this.eComponentRepository = eComponentRepository;
+        this.eUserMapper = eUserMapper;
+        this.eComponentMapper = eComponentMapper;
         this.uiConfigMapper = uiConfigMapper;
         this.eComponentMapper = eComponentMapper;
 
@@ -140,6 +152,18 @@ public class LoginController {
 
         if( !eComponents.isEmpty() )
             return new ResponseEntity(eComponentMapper.eComponentToEComponentResponse(eComponents.get(0)),HttpStatus.OK);
+        else
+            return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @GetMapping("/users")
+    @ResponseBody
+    public  ResponseEntity getUsersController(String areaKey) {
+
+        List<EUser> eUsers = eUserRepository.findByLogin(areaKey);
+
+        if( !eUsers.isEmpty())
+            return new ResponseEntity(eUserMapper.eUserToEUserResponse(eUsers.get(0)), HttpStatus.OK);
         else
             return new ResponseEntity(HttpStatus.OK);
     }
