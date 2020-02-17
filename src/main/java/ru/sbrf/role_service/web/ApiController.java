@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
-import ru.sbrf.role_service.dao.entity.EUser;
 import ru.sbrf.role_service.dao.repository.EUserRepository;
-import ru.sbrf.role_service.helper.AuthenticationService;
 import ru.sbrf.role_service.dao.entity.EComponent;
 import ru.sbrf.role_service.dao.entity.UIConfig;
 import ru.sbrf.role_service.dao.repository.EComponentRepository;
 import ru.sbrf.role_service.dao.repository.UIConfigRepository;
+import ru.sbrf.role_service.service.EUserService;
+import ru.sbrf.role_service.service.UIConfigService;
 import ru.sbrf.role_service.web.mapper.EComponentMapper;
 import ru.sbrf.role_service.web.mapper.EUserMapper;
 import ru.sbrf.role_service.web.mapper.UIConfigMapper;
@@ -36,33 +36,16 @@ import java.util.Set;
 @Log
 public class ApiController {
 
-    private AuthenticationService authenticationService;
-    private EUserRepository eUserRepository;
-    private UIConfigRepository uiConfigRepository;
-    private EComponentRepository eComponentRepository;
-    private EUserMapper eUserMapper;
-    private UIConfigMapper uiConfigMapper;
-    private EComponentMapper eComponentMapper;
+    private EUserService eUserService;
+    private UIConfigService uiConfigService;
 
     public ApiController() {}
 
     @Autowired
-    public ApiController(AuthenticationService authenticationService,
-                         EUserRepository eUserRepository,
-                         UIConfigRepository uiConfigRepository,
-                         EComponentRepository eComponentRepository,
-                         EUserMapper eUserMapper,
-                         UIConfigMapper uiConfigMapper,
-                         EComponentMapper eComponentMapper) {
-        this.authenticationService = authenticationService;
-        this.eUserRepository = eUserRepository;
-        this.uiConfigRepository = uiConfigRepository;
-        this.eComponentRepository = eComponentRepository;
-        this.eUserMapper = eUserMapper;
-        this.eComponentMapper = eComponentMapper;
-        this.uiConfigMapper = uiConfigMapper;
-        this.eComponentMapper = eComponentMapper;
-
+    public ApiController( EUserService eUserService,
+                          UIConfigService uiConfigService ) {
+        this.eUserService = eUserService;
+        this.uiConfigService = uiConfigService;
     }
 
     @PostMapping ("/users/login")
@@ -85,7 +68,7 @@ public class ApiController {
             return new ResponseEntity(response, HttpStatus.BAD_REQUEST);
         }
 
-        if( authenticationService.checkLogin(request.getLogin(), request.getPassword()) ) {
+        if( eUserService.findByLoginAndPassword(request.getLogin(), request.getPassword())) {
             log.info("postLoginController: Success login");
             return new ResponseEntity("Hello ".concat(request.getLogin()), HttpStatus.OK);
         }
@@ -95,76 +78,17 @@ public class ApiController {
         }
     }
 
-    @PostMapping ("/views")
-    @ResponseBody
-    public ResponseEntity postViewsController() {
-
-        Iterable<UIConfig> views = uiConfigRepository.findAll();
-        Set<UIConfigResponse> uiConfigResponseSet = new HashSet<>();
-
-        for( UIConfig uiConfig : views)
-            uiConfigResponseSet.add(uiConfigMapper.uiConfigToUIConfigResponse(uiConfig));
-
-        return new ResponseEntity(uiConfigResponseSet, HttpStatus.OK);
-    }
-
-    @PostMapping ("/components")
-    @ResponseBody
-    public ResponseEntity postComponentsController() {
-
-        Iterable<EComponent> components = eComponentRepository.findAll();
-        Set<EComponentResponse> EComponentResponseSet = new HashSet<>();
-
-        for( EComponent eComponent : components)
-            EComponentResponseSet.add(eComponentMapper.eComponentToEComponentResponse(eComponent));
-
-        return new ResponseEntity(EComponentResponseSet, HttpStatus.OK);
-    }
-
-//    @PostMapping("/components/add")
-//    @ResponseBody
-//    public ResponseEntity postComponentAddController() {
-//
-//        UIConfig uiConfig = uiConfigRepository.findByUid("uiConfig1").get(0);
-//        EComponent eComponent = eComponentRepository.findByName("eComponent2").get(0);
-//
-//        uiConfig.addOffComponent(eComponent);
-//        uiConfigRepository.save(uiConfig);
-//
-//        return new ResponseEntity(HttpStatus.OK);
-//    }
 
     @GetMapping("/components")
     @ResponseBody
     public ResponseEntity getComponentsController(String areaKey) {
-        List<UIConfig> uiConfigs = uiConfigRepository.findByUid(areaKey);
+        return new ResponseEntity(uiConfigService.findUIConfigResponseByUId(areaKey), HttpStatus.OK);
 
-        if( !uiConfigs.isEmpty() )
-            return new ResponseEntity(uiConfigMapper.uiConfigToUIConfigResponse(uiConfigs.get(0)), HttpStatus.OK);
-        else
-            return new ResponseEntity(HttpStatus.OK);
-    }
-
-    @GetMapping("/views")
-    @ResponseBody
-    public ResponseEntity getViewsController(String areaKey) {
-        List<EComponent> eComponents = eComponentRepository.findByName(areaKey);
-
-        if( !eComponents.isEmpty() )
-            return new ResponseEntity(eComponentMapper.eComponentToEComponentResponse(eComponents.get(0)),HttpStatus.OK);
-        else
-            return new ResponseEntity(HttpStatus.OK);
     }
 
     @GetMapping("/users")
     @ResponseBody
     public  ResponseEntity getUsersController(String areaKey) {
-
-        List<EUser> eUsers = eUserRepository.findByLogin(areaKey);
-
-        if( !eUsers.isEmpty())
-            return new ResponseEntity(eUserMapper.eUserToEUserResponse(eUsers.get(0)), HttpStatus.OK);
-        else
-            return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity(eUserService.findEUserResponseByLogin(areaKey), HttpStatus.OK);
     }
 }

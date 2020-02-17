@@ -8,5 +8,6 @@ import java.util.List;
 
 @Repository
 public interface UIConfigRepository extends CrudRepository<UIConfig, Long> {
+    List<UIConfig> findAll();
     List<UIConfig> findByUid(String uid);
 }

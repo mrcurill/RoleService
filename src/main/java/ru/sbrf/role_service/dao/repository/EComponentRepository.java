@@ -8,5 +8,6 @@ import java.util.List;
 
 @Repository
 public interface EComponentRepository extends CrudRepository<EComponent, Long> {
+    List<EComponent> findAll();
     List<EComponent> findByName(String name);
 }
