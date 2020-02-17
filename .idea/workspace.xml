@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="624b14e6-63c9-4142-ba97-ed5931956619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java" afterDir="false" />
+    <list default="true" id="624b14e6-63c9-4142-ba97-ed5931956619" name="Default Changelist" comment="2">
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/ru/sbrf/role_service/web/mapper/EUserMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roleService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/roleService.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/RoleServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EComponent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/UIConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/repository/EComponentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/repository/EUserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/repository/UIConfigRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/enums/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/helper/AuthenticationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/ApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-data_import.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-data_import.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/EUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/UIConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/dao/entity/UIConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/request/LoginRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/response/EComponentResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/response/LoginResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/response/UIConfigResponse.class" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,100 +34,8 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="testdb" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="testdb" type="feb32156:DbDataSourceImpl" />
-        <item name="TESTDB: database" type="c8e2528e:H2ImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="testdb" type="feb32156:DbDataSourceImpl" />
-        <item name="TESTDB: database" type="c8e2528e:H2ImplModel$Database" />
-        <item name="PUBLIC: schema" type="4f7ca4f5:H2ImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="167" column="53" selection-start-line="167" selection-start-column="53" selection-end-line="167" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-820">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="50" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -149,54 +46,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ecomp</find>
-      <find>com</find>
-      <find>componentma</find>
-      <find>eRole</find>
-      <find>disabledEComponents</find>
-      <find>maps</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ViewMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/ComponentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/UIConfigRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/db.changelog-master.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/18a5d8d4-ab3b-4a6a-b5aa-0c0681252779/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-data_import.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EGroupRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/ERoleRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EUserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -207,323 +59,18 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="roleService" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="roleService" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
     <option name="runMavenInBackground" value="false" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
   <component name="ProjectId" id="1XQUNhPDKcIzXDjZHiDykqKZTFc" />
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-          <State>
-            <id>Abstraction issuesJava</id>
-          </State>
-          <State>
-            <id>Android</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>CorrectnessLintAndroid</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
-          </State>
-          <State>
-            <id>Error handlingJava</id>
-          </State>
-          <State>
-            <id>FlexUnit</id>
-          </State>
-          <State>
-            <id>GeneralJava</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Google Web Toolkit</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>IconsUsabilityLintAndroid</id>
-          </State>
-          <State>
-            <id>Inheritance issuesJava</id>
-          </State>
-          <State>
-            <id>InternationalizationLintAndroid</id>
-          </State>
-          <State>
-            <id>JUnitJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Java 7Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>LintAndroid</id>
-          </State>
-          <State>
-            <id>MapStruct</id>
-          </State>
-          <State>
-            <id>MessagesCorrectnessLintAndroid</id>
-          </State>
-          <State>
-            <id>Method metricsGroovy</id>
-          </State>
-          <State>
-            <id>Method metricsJava</id>
-          </State>
-          <State>
-            <id>Numeric issuesJava</id>
-          </State>
-          <State>
-            <id>Packaging issuesJava</id>
-          </State>
-          <State>
-            <id>PerformanceJava</id>
-          </State>
-          <State>
-            <id>PerformanceLintAndroid</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
-          </State>
-          <State>
-            <id>Properties Files</id>
-          </State>
-          <State>
-            <id>RESTful Web Service</id>
-          </State>
-          <State>
-            <id>Reactor</id>
-          </State>
-          <State>
-            <id>Resource managementJava</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-          <State>
-            <id>SecurityJava</id>
-          </State>
-          <State>
-            <id>SecurityLintAndroid</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-          <State>
-            <id>Threading issuesJava</id>
-          </State>
-          <State>
-            <id>UsabilityLintAndroid</id>
-          </State>
-          <State>
-            <id>Verbose or redundant code constructsJava</id>
-          </State>
-          <State>
-            <id>XMLSpring CoreSpring</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="role_service" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RoleService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RoleService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="liquibase" type="462c0819:PsiDirectoryNode" />
-              <item name="v_1.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -531,6 +78,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="oracle&#10;h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -539,38 +87,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581872996218" />
-    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/liquibase" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/liquibase" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn compile" />
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RoleServiceApplication">
@@ -614,12 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.EmoAuthApplication" />
-      <item itemvalue="Spring Boot.EmoAuthApplication (1)" />
-      <item itemvalue="Application.EmoAuthApplication" />
-      <item itemvalue="Spring Boot.RoleServiceApplication" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.RoleServiceApplication" />
@@ -661,9 +189,7 @@
       <workItem from="1581090581514" duration="8001000" />
       <workItem from="1581519763621" duration="86000" />
       <workItem from="1581519875075" duration="12000" />
-      <workItem from="1581519906339" duration="9777000" />
-      <workItem from="1581769627549" duration="15282000" />
-      <workItem from="1581794747385" duration="5286000" />
+      <workItem from="1581519906339" duration="12996000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1581006423761</created>
@@ -707,89 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581353302186</updated>
     </task>
-    <task id="LOCAL-00007" summary="2">
-      <created>1581784648841</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1581784648841</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2">
-      <created>1581785384674</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1581785384674</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2">
-      <created>1581786250409</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1581786250409</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2">
-      <created>1581786266830</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1581786266830</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="7" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20568000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Image Layers" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3421687" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49928468" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="JSF" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="CDI" order="6" weight="0.3297568" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
-      <window_info anchor="right" id="Database" order="8" weight="0.3297568" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" weight="0.3297568" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$" />
@@ -799,10 +250,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="459" y="-863" key="#Assign_Data_Sources" timestamp="1581602464760">
+    <state x="459" y="-863" key="#Assign_Data_Sources" timestamp="1581933204019">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="459" y="-863" key="#Assign_Data_Sources/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581602464760" />
+    <state x="459" y="-863" key="#Assign_Data_Sources/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581933204019" />
     <state x="496" y="225" key="#Assign_Data_Sources/0.0.1792.1120@0.0.1792.1120" timestamp="1581409770392" />
     <state x="459" y="-863" key="#SQL_Dialects" timestamp="1581682917731">
       <screen x="-72" y="-1080" width="1920" height="1080" />
@@ -831,74 +282,82 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="699" y="483" key="Github.CreateGistDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1581005609884" />
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1581688657447">
+    <state width="1878" height="291" key="GridCell.Tab.0.bottom" timestamp="1581934591233">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657447" />
+    <state width="1878" height="291" key="GridCell.Tab.0.bottom/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591233" />
     <state width="1878" height="304" key="GridCell.Tab.0.bottom/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442638" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581519080793" />
+    <state width="1750" height="304" key="GridCell.Tab.0.bottom/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353380" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1731.1097@0.23.1731.1097" timestamp="1581082336235" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1580996317284" />
-    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1581688657445">
+    <state width="1878" height="291" key="GridCell.Tab.0.center" timestamp="1581934591231">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.center/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657445" />
+    <state width="1878" height="291" key="GridCell.Tab.0.center/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591231" />
     <state width="1878" height="304" key="GridCell.Tab.0.center/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442636" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581519080792" />
+    <state width="1750" height="304" key="GridCell.Tab.0.center/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353377" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1731.1097@0.23.1731.1097" timestamp="1581082336234" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1580996317282" />
-    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1581688657444">
+    <state width="1878" height="291" key="GridCell.Tab.0.left" timestamp="1581934591230">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.left/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657444" />
+    <state width="1878" height="291" key="GridCell.Tab.0.left/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591230" />
     <state width="1878" height="304" key="GridCell.Tab.0.left/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442635" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581519080792" />
+    <state width="1750" height="304" key="GridCell.Tab.0.left/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353371" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1731.1097@0.23.1731.1097" timestamp="1581082336233" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1580996317282" />
-    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1581688657446">
+    <state width="1878" height="291" key="GridCell.Tab.0.right" timestamp="1581934591232">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.right/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657446" />
+    <state width="1878" height="291" key="GridCell.Tab.0.right/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591232" />
     <state width="1878" height="304" key="GridCell.Tab.0.right/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442637" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581519080793" />
+    <state width="1750" height="304" key="GridCell.Tab.0.right/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353379" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1731.1097@0.23.1731.1097" timestamp="1581082336234" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1580996317283" />
-    <state width="1878" height="304" key="GridCell.Tab.1.bottom" timestamp="1581688657451">
+    <state width="1878" height="291" key="GridCell.Tab.1.bottom" timestamp="1581934591238">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.1.bottom/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657451" />
+    <state width="1878" height="291" key="GridCell.Tab.1.bottom/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591238" />
     <state width="1878" height="304" key="GridCell.Tab.1.bottom/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442641" />
     <state width="1750" height="391" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1581090556879" />
-    <state width="1750" height="391" key="GridCell.Tab.1.bottom/0.23.1729.1097@0.23.1729.1097" timestamp="1581087161663" />
-    <state width="1878" height="304" key="GridCell.Tab.1.center" timestamp="1581688657449">
+    <state width="1750" height="304" key="GridCell.Tab.1.bottom/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353387" />
+    <state width="1878" height="291" key="GridCell.Tab.1.center" timestamp="1581934591236">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.1.center/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657449" />
+    <state width="1878" height="291" key="GridCell.Tab.1.center/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591236" />
     <state width="1878" height="304" key="GridCell.Tab.1.center/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442639" />
     <state width="1750" height="391" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1581090556877" />
-    <state width="1750" height="391" key="GridCell.Tab.1.center/0.23.1729.1097@0.23.1729.1097" timestamp="1581087161662" />
-    <state width="1878" height="304" key="GridCell.Tab.1.left" timestamp="1581688657448">
+    <state width="1750" height="304" key="GridCell.Tab.1.center/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353383" />
+    <state width="1878" height="291" key="GridCell.Tab.1.left" timestamp="1581934591235">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.1.left/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657448" />
+    <state width="1878" height="291" key="GridCell.Tab.1.left/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591235" />
     <state width="1878" height="304" key="GridCell.Tab.1.left/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442638" />
     <state width="1750" height="391" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1581090556877" />
-    <state width="1750" height="391" key="GridCell.Tab.1.left/0.23.1729.1097@0.23.1729.1097" timestamp="1581087161662" />
-    <state width="1878" height="304" key="GridCell.Tab.1.right" timestamp="1581688657450">
+    <state width="1750" height="304" key="GridCell.Tab.1.left/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353382" />
+    <state width="1878" height="291" key="GridCell.Tab.1.right" timestamp="1581934591237">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.1.right/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581688657450" />
+    <state width="1878" height="291" key="GridCell.Tab.1.right/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581934591237" />
     <state width="1878" height="304" key="GridCell.Tab.1.right/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688442640" />
     <state width="1750" height="391" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1581090556878" />
-    <state width="1750" height="391" key="GridCell.Tab.1.right/0.23.1729.1097@0.23.1729.1097" timestamp="1581087161663" />
+    <state width="1750" height="304" key="GridCell.Tab.1.right/0.23.1729.1097@0.23.1729.1097" timestamp="1581929353386" />
     <state width="239" height="457" key="HiddenNamespacesPopup" timestamp="1581600539834">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581600539834" />
-    <state x="353" y="-924" width="1101" height="722" key="SettingsEditor" timestamp="1581692055345">
+    <state x="607" y="283" key="MultipleFileMergeDialog" timestamp="1581929029973">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="607" y="283" key="MultipleFileMergeDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1581929029973" />
+    <state x="353" y="-924" width="1101" height="722" key="SettingsEditor" timestamp="1581692785414">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="353" y="-924" width="1101" height="722" key="SettingsEditor/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581692055345" />
+    <state x="353" y="-924" width="1101" height="722" key="SettingsEditor/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581692785414" />
     <state x="397" y="162" width="1027" height="722" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1581519831263" />
     <state x="397" y="170" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1580977811672" />
     <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1581353338809">
@@ -909,10 +368,11 @@
       <screen x="0" y="23" width="1792" height="1017" />
     </state>
     <state x="550" y="366" key="com.intellij.ide.util.TipDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1580977792203" />
-    <state x="693" y="-616" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581688383805">
-      <screen x="-72" y="-1080" width="1920" height="1080" />
+    <state x="714" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581929022691">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="693" y="-616" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581688383805" />
+    <state x="714" y="481" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1581929022691" />
     <state x="596" y="358" key="git4idea.merge.GitPullDialog" timestamp="1581342856843">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -931,259 +391,16 @@
     </state>
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1581351316669" />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.yml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/liquibase/liquibase-core/3.8.5/liquibase-core-3.8.5.jar!/www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="284" column="71" lean-forward="true" selection-start-line="284" selection-start-column="71" selection-end-line="284" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/UIConfigRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://18a5d8d4-ab3b-4a6a-b5aa-0c0681252779/database/TESTDB/schema/INFORMATION_SCHEMA/table/TABLES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://18a5d8d4-ab3b-4a6a-b5aa-0c0681252779/database/TESTDB/schema/INFORMATION_SCHEMA/table/USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/18a5d8d4-ab3b-4a6a-b5aa-0c0681252779/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/LoginResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/request/LoginRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EComponentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EGroupRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/ERoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/UIConfigResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/enums/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/helper/AuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/RoleServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/db.changelog-master.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EComponentResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EComponentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-data_import.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="36" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/UIConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/repository/EUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/ERole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/UIConfigMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="167" column="53" selection-start-line="167" selection-start-column="53" selection-end-line="167" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/response/EUserResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/mapper/EUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/web/ApiController.java</url>
+          <line>64</line>
+          <properties field="componentMapper" class="ru.sbrf.role_service.web.LoginController" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

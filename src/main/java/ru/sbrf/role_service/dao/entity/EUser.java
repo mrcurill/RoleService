@@ -24,14 +24,15 @@ public class EUser {
     private Date createdAt;
     private Boolean isActive;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    private ERole eRole;
-//
-//    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-//    @JoinTable(name = "E_USER_E_GROUP",
-//            joinColumns = @JoinColumn(name="E_USER_ID"),
-//            inverseJoinColumns = @JoinColumn(name="E_GROUP_ID"))
-//    private Set<EGroup> eGroups;
+    @ManyToOne
+    @JoinColumn(name="ROLE_ID")
+    private ERole eRole;
+
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+    @JoinTable(name = "E_USER_E_GROUP",
+            joinColumns = @JoinColumn(name="E_USER_ID"),
+            inverseJoinColumns = @JoinColumn(name="E_GROUP_ID"))
+    private Set<EGroup> eGroups;
 
 
 

@@ -7,6 +7,7 @@
 	    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
 <!--SELECT * FROM E_USER;-->
+<!--SELECT * FROM E_ROLE;-->
 <!--SELECT * FROM E_COMPONENT;-->
 <!--SELECT * FROM E_GROUP;-->
 <!--SELECT * FROM E_USER_E_GROUP;-->
@@ -58,10 +59,16 @@
 
         <!--E_ROLE-->
         <insert tableName="E_ROLE">
-            <column name="NAME" value="eRole1"/>
+            <column name="NAME" value="admin"/>
         </insert>
         <insert tableName="E_ROLE">
-            <column name="NAME" value="eRole2"/>
+            <column name="NAME" value="user"/>
+        </insert>
+        <insert tableName="E_ROLE">
+            <column name="NAME" value="manager"/>
+        </insert>
+        <insert tableName="E_ROLE">
+            <column name="NAME" value="analist"/>
         </insert>
 
 

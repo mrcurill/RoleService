@@ -19,9 +19,8 @@ public class EGroup {
     private Long id;
     @NonNull
     private String name;
-//    @ManyToMany(mappedBy = "eGroups")
-//    private Set<EUser> eUsers;
-
+    @ManyToMany(mappedBy = "eGroups")
+    private Set<EUser> eUsers;
 
     @Override
     public boolean equals(Object o) {

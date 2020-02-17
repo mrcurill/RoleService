@@ -18,8 +18,8 @@ public abstract class EUserMapper {
             @Mapping(source = "lastSign", target = "lastSign"),
             @Mapping(source = "isActive", target = "isActive"),
             @Mapping(source = "ip", target = "ip"),
-//        @Mapping(source = "eRole", target = "role"),
-//        @Mapping(source = "eGroups", target = "groups")
+            @Mapping(source = "ERole", target = "role"),
+            @Mapping(source = "EGroups", target = "groups")
     })
     public abstract EUserResponse eUserToEUserResponse(EUser eUser);
 

@@ -33,15 +33,14 @@ public class UIConfig {
             inverseJoinColumns = @JoinColumn(name="E_COMPONENT_ID"))
     private Set<EComponent> disabledEComponents;
 
-    public void addOnEComponent(EComponent eComponent) {
-        onEComponents.add(eComponent);
-        offEComponents.remove(eComponent);
-        disabledEComponents.remove(eComponent);
-    }
+//    public void addOnEComponent(EComponent eComponent) {
+//        onEComponents.add(eComponent);
+//        offEComponents.remove(eComponent);
+//        disabledEComponents.remove(eComponent);
+//    }
 
     public void addOffComponent(EComponent eComponent) {
         offEComponents.add(eComponent);
-        onEComponents.remove(eComponent);
         disabledEComponents.remove(eComponent);
     }
 

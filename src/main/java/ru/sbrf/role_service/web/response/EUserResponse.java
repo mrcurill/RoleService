@@ -12,6 +12,6 @@ public class EUserResponse {
     private Date lastSign;
     private Boolean isActive;
     private String ip;
-//    private String role;
-//    private Set<String> groups;
+    private String role;
+    private Set<String> groups;
 }

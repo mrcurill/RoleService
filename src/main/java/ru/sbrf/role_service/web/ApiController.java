@@ -34,7 +34,7 @@ import java.util.Set;
 
 @Controller
 @Log
-public class LoginController {
+public class ApiController {
 
     private AuthenticationService authenticationService;
     private EUserRepository eUserRepository;
@@ -44,16 +44,16 @@ public class LoginController {
     private UIConfigMapper uiConfigMapper;
     private EComponentMapper eComponentMapper;
 
-    public LoginController() {}
+    public ApiController() {}
 
     @Autowired
-    public LoginController(AuthenticationService authenticationService,
-                           EUserRepository eUserRepository,
-                           UIConfigRepository uiConfigRepository,
-                           EComponentRepository eComponentRepository,
-                           EUserMapper eUserMapper,
-                           UIConfigMapper uiConfigMapper,
-                           EComponentMapper eComponentMapper) {
+    public ApiController(AuthenticationService authenticationService,
+                         EUserRepository eUserRepository,
+                         UIConfigRepository uiConfigRepository,
+                         EComponentRepository eComponentRepository,
+                         EUserMapper eUserMapper,
+                         UIConfigMapper uiConfigMapper,
+                         EComponentMapper eComponentMapper) {
         this.authenticationService = authenticationService;
         this.eUserRepository = eUserRepository;
         this.uiConfigRepository = uiConfigRepository;

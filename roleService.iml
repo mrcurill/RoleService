@@ -9,6 +9,7 @@
           <factory-entry name="Entities" />
           <factory-entry name="entityManagerFactory" value="18a5d8d4-ab3b-4a6a-b5aa-0c0681252779" />
         </datasource-mapping>
+        <naming-strategy-map />
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">

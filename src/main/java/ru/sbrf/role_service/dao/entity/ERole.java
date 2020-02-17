@@ -15,22 +15,25 @@ public class ERole {
     private Long id;
     private String name;
 
-//    @OneToMany(
-//            mappedBy = "eRole",
-//            cascade = CascadeType.ALL,
-//            orphanRemoval = true
-//    )
+//    @OneToMany(mappedBy = "eRole")
 //    private Set<EUser> eUsers;
-//
-//    public void addEUser(EUser eUser) {
-//        eUsers.add(eUser);
-//        eUser.setERole(this);
-//    }
-//
-//    public void removeEUser(EUser eUser) {
-//        eUsers.remove(eUser);
-//        eUser.setERole(null);
-//    }
+
+    @OneToMany(
+            mappedBy = "eRole",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    private Set<EUser> eUsers;
+
+    public void addEUser(EUser eUser) {
+        eUsers.add(eUser);
+        eUser.setERole(this);
+    }
+
+    public void removeEUser(EUser eUser) {
+        eUsers.remove(eUser);
+        eUser.setERole(null);
+    }
 
 
 }
