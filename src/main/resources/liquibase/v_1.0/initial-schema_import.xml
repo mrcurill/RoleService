@@ -46,7 +46,7 @@
             <column name="ID" type="BIGINT" defaultValueSequenceNext="E_COMPONENT_ID_SEQ" remarks="id компонента">
                 <constraints primaryKey="true" primaryKeyName="PK_E_COMPONENT"/>
             </column>
-            <column name="NAME" type="VARCHAR(20)">
+            <column name="NAME" type="VARCHAR(100)">
                 <constraints nullable="false"/>
             </column>
         </createTable>

@@ -82,13 +82,24 @@ public class ApiController {
     @GetMapping("/components")
     @ResponseBody
     public ResponseEntity getComponentsController(String areaKey) {
-        return new ResponseEntity(uiConfigService.findUIConfigResponseByUId(areaKey), HttpStatus.OK);
 
+        log.info("getComponentsController: invoked");
+        ResponseEntity result = new ResponseEntity(uiConfigService.findUIConfigResponseByUId(areaKey), HttpStatus.OK);
+        log.info("getComponentsController: return: ".concat(result.toString()));
+        log.info("getComponentsController: end");
+
+        return result;
     }
 
     @GetMapping("/users")
     @ResponseBody
     public  ResponseEntity getUsersController(String areaKey) {
-        return new ResponseEntity(eUserService.findEUserResponseByLogin(areaKey), HttpStatus.OK);
+
+        log.info("getUsersController: invoked");
+        ResponseEntity result =  new ResponseEntity(eUserService.findEUserResponseByLogin(areaKey), HttpStatus.OK);
+        log.info("getUsersController: return: ".concat(result.toString()));
+        log.info("getUsersController: end");
+
+        return result;
     }
 }

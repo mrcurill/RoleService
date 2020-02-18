@@ -15,9 +15,6 @@ public class ERole {
     private Long id;
     private String name;
 
-//    @OneToMany(mappedBy = "eRole")
-//    private Set<EUser> eUsers;
-
     @OneToMany(
             mappedBy = "eRole",
             cascade = CascadeType.ALL,

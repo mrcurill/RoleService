@@ -41,19 +41,94 @@
 
         <!--E_COMPONENT-->
         <insert tableName="E_COMPONENT">
-            <column name="NAME" value="eComponent1"/>
+            <column name="NAME" value="create_campaign"/>
         </insert>
         <insert tableName="E_COMPONENT">
-            <column name="NAME" value="eComponent2"/>
+            <column name="NAME" value="create_campaign.name"/>
         </insert>
         <insert tableName="E_COMPONENT">
-            <column name="NAME" value="eComponent3"/>
+            <column name="NAME" value="create_campaign.period"/>
         </insert>
         <insert tableName="E_COMPONENT">
-            <column name="NAME" value="eComponent4"/>
+            <column name="NAME" value="create_campaign.offer"/>
         </insert>
         <insert tableName="E_COMPONENT">
-            <column name="NAME" value="eComponent5"/>
+            <column name="NAME" value="create_campaign.channel_choise"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.email"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.sms"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.push"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.viber"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.call_km_vip"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.call_km_premier"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.pochta_rosii"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.push.outgoing_call"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.dsa"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.segmento"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.erib"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.incoming_call"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.premier_office"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.office"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.sberbank_ru"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.smart_autopay"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.ivr"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.atm"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.operator_chat"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.chat_bot"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.statement"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.web_sbol"/>
+        </insert>
+        <insert tableName="E_COMPONENT">
+            <column name="NAME" value="create_campaign.channel_choise.pull.app"/>
         </insert>
 
 

@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class LoginResponse {
-    private String message;
+    private EUserResponse user;
+    private String token;
     private List<String> errors;
 }
