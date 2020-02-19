@@ -27,7 +27,7 @@ public class EComponentService {
 
         if(eComponents.isEmpty())
             return null;
-        else
-            return  eComponents.get(0);
+
+        return  eComponents.get(0);
     }
 }

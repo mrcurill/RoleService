@@ -28,8 +28,8 @@ public class UIConfigService {
 
         if( uiConfigs.isEmpty() )
             return null;
-        else
-            return uiConfigs.get(0);
+
+        return uiConfigs.get(0);
     }
 
     public UIConfigResponse findUIConfigResponseByUId( String uid ) {

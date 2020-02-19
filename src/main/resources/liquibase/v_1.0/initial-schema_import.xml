@@ -23,7 +23,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="ROLE_ID" type="VARCHAR(20)">
-                <constraints nullable="false"/>
+                <constraints nullable="false" foreignKeyName="FK_E_USER_E_ROLE_ID" references="E_ROLE (ID)"/>/>
             </column>
             <column name="IP" type="VARCHAR">
                 <constraints nullable="true"/>
@@ -32,7 +32,7 @@
                 <constraints nullable="true"/>
             </column>
             <column name="CREATED_AT" type="DATE">
-                <constraints nullable="true"/>
+                <constraints nullable="false"/>
             </column>
             <column name="IS_ACTIVE" type="CHAR(1)" defaultValue="N">
                 <constraints nullable="false" />

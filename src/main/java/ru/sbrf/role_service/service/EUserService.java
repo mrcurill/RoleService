@@ -26,17 +26,17 @@ public class EUserService {
     public EUser findByLogin(String login) {
         List<EUser> eUsers = eUserRepository.findByLogin(login);
 
-        if( !eUsers.isEmpty() )
-            return eUsers.get(0);
-        else
+        if( eUsers.isEmpty() )
             return null;
+
+        return eUsers.get(0);
     }
 
     public Boolean findByLoginAndPassword(String login, String password) {
         if( eUserRepository.findByLoginAndPassword(login, password).isEmpty() )
             return false;
-        else
-            return true;
+
+        return true;
     }
 
     public Set<EUserResponse> findAllEUserResponse() {
@@ -52,10 +52,10 @@ public class EUserService {
     public EUserResponse findEUserResponseByLogin(String login) {
         EUser eUser = findByLogin(login);
 
-        if( null != eUser )
-            return eUserMapper.eUserToEUserResponse(eUser);
-        else
+        if( null == eUser )
             return null;
+
+        return eUserMapper.eUserToEUserResponse(eUser);
     }
 
 
