@@ -56,7 +56,7 @@
         <createSequence sequenceName="E_ROLE_ID_SEQ"/>
         <createTable tableName="E_ROLE" remarks="Таблица ролей">
             <column name="ID" type="BIGINT" defaultValueSequenceNext="E_ROLE_ID_SEQ" remarks="id роли">
-                <constraints nullable="false" primaryKey="true" primaryKeyName=" PK_E_ROLE"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_E_ROLE"/>
             </column>
             <column name="NAME" type="VARCHAR(20)">
                 <constraints nullable="false"/>
@@ -68,7 +68,7 @@
         <createSequence sequenceName="E_GROUP_ID_SEQ"/>
         <createTable tableName="E_GROUP" remarks="Таблица групп">
             <column name="ID" type="BIGINT" defaultValueSequenceNext="E_GROUP_ID_SEQ" remarks="id группы">
-                <constraints nullable="false" primaryKey="true" primaryKeyName=" PK_E_GROUP"/>
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_E_GROUP"/>
             </column>
             <column name="NAME" type="VARCHAR(20)">
                 <constraints nullable="false"/>

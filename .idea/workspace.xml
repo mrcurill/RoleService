@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="624b14e6-63c9-4142-ba97-ed5931956619" name="Default Changelist" comment="">
+    <list default="true" id="624b14e6-63c9-4142-ba97-ed5931956619" name="Default Changelist" comment="123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/sbrf/role_service/dao/entity/EUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/response/LoginResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/sbrf/role_service/web/response/LoginResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0/initial-schema_import.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +89,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/liquibase" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/liquibase/v_1.0" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -162,7 +161,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -193,7 +202,7 @@
       <workItem from="1581519875075" duration="12000" />
       <workItem from="1581519906339" duration="22740000" />
       <workItem from="1582042028873" duration="135000" />
-      <workItem from="1582042176906" duration="2686000" />
+      <workItem from="1582042176906" duration="3578000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1581006423761</created>
@@ -258,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582039698380</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="123">
+      <created>1582123113150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582123113150</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,10 +320,10 @@
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
     <state x="626" y="-786" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581936913734" />
-    <state x="441" y="-922" key="CommitChangelistDialog2" timestamp="1582123055322">
+    <state x="441" y="-922" key="CommitChangelistDialog2" timestamp="1582123127485">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="441" y="-922" key="CommitChangelistDialog2/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1582123055322" />
+    <state x="441" y="-922" key="CommitChangelistDialog2/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1582123127485" />
     <state x="441" y="-922" key="CommitChangelistDialog2/-72.-1080.1920.1080/0.23.1792.1097@-72.-1080.1920.1080" timestamp="1581942076497" />
     <state x="479" y="164" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1581353322920" />
     <state x="699" y="483" key="Github.CreateGistDialog" timestamp="1581005609884">
@@ -408,10 +424,10 @@
     <state x="353" y="-924" width="1101" height="722" key="SettingsEditor/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1581692785414" />
     <state x="397" y="162" width="1027" height="722" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1581519831263" />
     <state x="397" y="170" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1580977811672" />
-    <state x="459" y="-791" key="Vcs.Push.Dialog.v2" timestamp="1582039715928">
+    <state x="459" y="-791" key="Vcs.Push.Dialog.v2" timestamp="1582123133738">
       <screen x="-72" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="459" y="-791" key="Vcs.Push.Dialog.v2/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1582039715928" />
+    <state x="459" y="-791" key="Vcs.Push.Dialog.v2/-72.-1080.1920.1080/0.0.1792.1120@-72.-1080.1920.1080" timestamp="1582123133738" />
     <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1581353338809" />
     <state x="550" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1580977792203">
       <screen x="0" y="23" width="1792" height="1017" />
