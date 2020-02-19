@@ -33,18 +33,4 @@ public class EUser {
             joinColumns = @JoinColumn(name="E_USER_ID"),
             inverseJoinColumns = @JoinColumn(name="E_GROUP_ID"))
     private Set<EGroup> eGroups;
-
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof EUser)) return false;
-        return id != null && id.equals(((EUser) o).getId());
-    }
-
-    @Override
-    public int hashCode() {
-        return 31;
-    }
 }

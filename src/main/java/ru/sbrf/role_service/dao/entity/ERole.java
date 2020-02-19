@@ -15,11 +15,7 @@ public class ERole {
     private Long id;
     private String name;
 
-    @OneToMany(
-            mappedBy = "eRole",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
+    @OneToMany(mappedBy = "eRole", cascade = CascadeType.ALL)
     private Set<EUser> eUsers;
 
     public void addEUser(EUser eUser) {
